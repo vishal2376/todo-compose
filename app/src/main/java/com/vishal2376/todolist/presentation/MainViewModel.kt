@@ -1,4 +1,4 @@
-package com.vishal2376.todolist
+package com.vishal2376.todolist.presentation
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -14,7 +14,13 @@ import javax.inject.Inject
 
 @HiltViewModel
 class MainViewModel @Inject constructor(private val repository: TodoRepository) : ViewModel() {
-	var todo: Todo by mutableStateOf(Todo(0, "", false))
+	var todo: Todo by mutableStateOf(
+		Todo(
+			0,
+			"",
+			false
+		)
+	)
 		private set
 
 	val getAllTodos = repository.getAllTodos()
