@@ -10,7 +10,7 @@ val taskTextStyle = TextStyle(
 	fontWeight = FontWeight.Medium
 )
 
-val topAppBar = TextStyle(
+val topAppBarTextStyle = TextStyle(
 	fontSize = 26.sp,
 	fontFamily = FontFamily.Serif
 )
